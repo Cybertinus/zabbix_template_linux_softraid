@@ -26,7 +26,7 @@
 #SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Function to show how this script should be used
-function usuage() {
+function usage() {
         echo "Usuage: $0 raid-device informationpart
 
 eg. $0 md0 State"
@@ -36,13 +36,13 @@ eg. $0 md0 State"
 if [ -z "${1}" ] ; then
         echo 'Forget to specify the RAID device.' 1>&2
         echo ''
-        usuage
+        usage
         exit 1
 # Check if $2 is specified, if not tell the user how to use this program and exit
 elif [ -z "${2}" ] ; then
         echo 'Forget to specify the piece of information you are looking for.' 1>&2
         echo ''
-        usuage
+        usage
         exit 2
 fi
 
