@@ -27,7 +27,7 @@
 
 # Function to show how this script should be used
 function usage() {
-        echo "Usuage: $0 raid-device informationpart
+        echo "Usage: $0 raid-device informationpart
 
 eg. $0 md0 State"
 }
